@@ -34,7 +34,9 @@ class App{
             $sanitizedUrl = filter_var(
                 rtrim($_GET['url'], '/'), 
                 FILTER_SANITIZE_URL);
-            return explode('/',$sanitizedUrl);
+            $url = explode('/',$sanitizedUrl);
+            return ($url);
+            //return ['controller'=>$url[0], 'method' => $url[1], 'params'=>$url[2]];    
              
          }
      }
