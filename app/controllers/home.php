@@ -1,7 +1,7 @@
 <?php
 
 class Home extends Controller{
-    public class index(){
+    public function index(){
         echo 'home/index';
     }
 }
