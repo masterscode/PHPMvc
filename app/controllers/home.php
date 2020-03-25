@@ -1,7 +1,7 @@
 <?php
 
 class Home extends Controller{
-    public function index($param = '', $paramTwo = ''){
+    public function index(string $param = '', string $paramTwo = ''):void{
         
         
         $user = $this->model('Users');
@@ -10,7 +10,7 @@ class Home extends Controller{
 
         
     }
-    public function login(){
+    public function login():void{
 
     }
 }
